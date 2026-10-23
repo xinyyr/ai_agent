@@ -8,12 +8,15 @@
 
         <div class="chat-header">
             <img src="logo.svg" alt="Logo" />
-            <p>gemini</p>
+            <p>Mistral</p>
         </div>
 
         <div id="chatbox"></div>
 
         <div class="input-area">
+            <input id="fileInput" type="file" accept=".pdf,.docx,.txt" hidden>
+            <button id="uploadBtn" title="Učitaj dokument (PDF, DOCX, TXT)">📎</button>
+
             <input id="input" type="text" placeholder="Postavite pitanje ...">
             <button id="sendBtn">Pošalji</button>
         </div>
