@@ -42,7 +42,7 @@ async function sendMessage() {
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ message: message, session_id: sessionId })
         });
-        appendMessage("bot", data.response);
+        appendMessage("bot", data.reply);
     } catch (error) {
         console.error("CHAT ERROR:", error);
         appendMessage("bot", "Greška: " + error.message);
@@ -61,7 +61,7 @@ async function uploadFile() {
             method: "POST",
             body: formData
         });
-        appendMessage("bot", "Dokument uspješno učitan: " + data.filename);
+        appendMessage("bot", "Dokument uspješno učitan: " + data.message);
     } catch (error) {
         console.error("UPLOAD ERROR:", error);
         appendMessage("bot", "Greška:" + error.message);

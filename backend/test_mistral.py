@@ -20,7 +20,7 @@ client = Mistral(api_key=api_key)
 
 try:
     response = client.chat.complete(
-        model="mistral-small-2063",
+        model="ministral-8b-2512",
         messages=[
             {"role": "user", "content": "Reply with hello"}
         ],

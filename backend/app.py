@@ -42,7 +42,7 @@ def chat():
 
     try:
         response = client.chat.complete(
-            model="mistral-small-2603", 
+            model="ministral-8b-2512", 
             messages=messages,
             temperature=0.5,
             max_tokens=1500,
